@@ -1,0 +1,176 @@
+.home{
+    padding: 3rem;
+}
+
+.HomeContainer{
+    
+        display: grid;
+        grid-template-columns: 1.1fr 2fr; 
+        gap: 7rem; 
+        padding: 12px
+
+    
+}
+.homeTitle{
+    font-size: 48px;
+    font-weight: 600;
+    color: black;
+
+}
+.homeLeftsideTexCtn{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 12px;
+    border: 1px solid #D9D9D9;
+    padding: 1rem;
+    margin-top: 12px;
+    min-width: 100px;
+}
+.homeLeftsideText{
+    font-size: 18px;
+    font-family: 400;
+    color: black;
+}
+.homeContainerRightSide{
+    max-width: 100%;
+    overflow: hidden;
+    border:1px solid #F6FAFD;
+    border-radius: 12px;
+
+}
+  
+.s-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-container .swiper {
+    width: 100%;
+    height: 12rem;
+    position: unset;
+}
+.s-container .swiper-slide {
+    background: white;
+    display: flex;
+    border-radius: 10px;
+    padding: 0rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.s-container .swiper-button-prev {
+    left: 1rem;
+    width:35px; 
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+}
+.s-container .swiper-button-prev::after {
+    font-size: 15px; 
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+.s-container .swiper-button-next {
+   
+    right: 1rem;
+    width:35px; 
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+}
+.s-container .swiper-button-next::after {
+    font-size: 15px; 
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+  }
+
+
+.s-container .swiper-button-prev,
+.s-container .swiper-button-next {
+    color: black;
+}
+.categorieContainer{
+    border: 1px solid #F4F4F4;
+     background: #F4F4F4;
+     border-radius: 10px;
+    padding: 1.2rem;
+}
+.categorieText{
+    font-size: 16px;
+    background: white;
+    padding: 0.5rem;
+
+}
+.categorieImageContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 15px;
+}
+.grid-containeritem {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+  }
+  .catergorieImage{
+    width:5rem;
+    height: 5rem;
+  }
+  .imgContainer{
+    border: 1px solid #CCE5F9;
+    background-color: #CCE5F9;
+    border-radius: 10px;
+    padding: 6px 10px;
+  }
+  .categoryName{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+  }
+  .BookedText{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    white-space: no-wrap;
+  }
+  .mostBookedContainer{
+    display: flex;
+    gap:4.1rem;
+    margin-top: 3.5rem;
+  }
+  .singleBook{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border: 1px soild grey;
+  }
+  .bookImage{
+    width: 16rem;
+    height: 16rem;
+  }
+  .servicesName{
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+  }
+  .bookNowContainer{
+    display: flex;
+    padding: 0rem 3rem;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+  .bookNow{
+    display: flex;
+    flex: 1;
+  }
+  .bookNow> img{
+    width: 30rem;
+    height: 15rem;
+  }
