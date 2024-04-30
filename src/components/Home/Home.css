@@ -116,11 +116,15 @@
 .grid-containeritem {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    grid-gap: 10px; /* Adjust the gap between grid items as needed */
+    grid-gap: 10px; 
+    cursor: pointer;
+    /* border: 2px solid white; */
+
   }
   .catergorieImage{
     width:5rem;
     height: 5rem;
+    object-fit: cover;
   }
   .imgContainer{
     border: 1px solid #CCE5F9;
@@ -143,34 +147,112 @@
   .mostBookedContainer{
     display: flex;
     gap:4.1rem;
-    margin-top: 3.5rem;
+    margin-top: 2rem;
   }
   .singleBook{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.2rem;
     border: 1px soild grey;
+    cursor: pointer;
+    
   }
   .bookImage{
-    width: 16rem;
-    height: 16rem;
+    width: 16.5rem;
+    height: 16.5rem;
+    
+    transition: transform 0.3s ease-in-out;
   }
+  .singleBook:hover .bookImage {
+    transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
+}
   .servicesName{
     font-weight: 500;
     font-size: 18px;
-    color: black;
+    color: #1c49b2;;
   }
   .bookNowContainer{
     display: flex;
-    padding: 0rem 3rem;
+    flex-direction: column;
+    /* padding: 0rem 3rem; */
     margin-top: 5rem;
-    gap: 3rem;
   }
   .bookNow{
     display: flex;
-    flex: 1;
+    gap: 6rem;
   }
   .bookNow> img{
     width: 30rem;
     height: 15rem;
+    cursor: pointer;
   }
+  .popularCategorie{
+    font-size: 34px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1.5rem;
+  }
+  .BannerContainer{
+    position: relative;
+    width: 600px;
+    padding: 1rem 19rem;
+    height: 15rem;
+    background-color: #1993F8;
+    margin-top: 3rem;
+    border-radius: 19px;
+  }
+  .bannerImageConatiner{
+    position: absolute;
+    left: -17px;
+    top: -48px;
+    padding: 1rem;
+  }
+  .bannerImageConatiner>img{
+    width: 19rem;
+    height: 19rem;
+    object-fit: cover;
+  }
+  .bannerText01{
+    position: absolute;
+    top: 70px;
+    left: 300px;
+    font-size: 1.3rem;
+    line-height: 2rem !important;
+    padding: .2rem 0;
+    color: white;
+    white-space: nowrap;
+    /* margin: 0px 0px 5rem 0px; */
+    
+  }
+  .bannerText02{
+    position: absolute;
+    top: 90px;
+    left: 300px;
+    font-size: 24px;
+    line-height: 4rem !important;
+    padding: .2rem 0;
+    color: white;
+    white-space: nowrap;
+    font-family: 600;
+    /* margin: 0px 0px 5rem 0px; */
+
+  }
+  .bannerText03{
+    font-size: 1rem;
+    line-height: 3rem;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+    white-space: nowrap;
+
+  }
+  .bannerGoogleImage{
+    position: absolute;
+    bottom: 90px;
+    left: 300px;
+    display: flex;
+    gap: 3rem;
+  }
+ 

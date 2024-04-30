@@ -7,15 +7,18 @@ import { SliderProducts } from '../../data/SliderImagesData';
 import { cateogrie } from '../../data/SliderImagesData';
 import { MostBooked } from '../../data/SliderImagesData';
 import Book1 from "../../Images/Book1.png";
-import Book2 from "../../Images/Book2.png"
+import Book2 from "../../Images/Book2.png";
+import bannerImage from "../../Images/bannerImage.png";
+import GooglePlay from "../../Images/GooglePlay.png";
+import AppStore from "../../Images/App Store.png"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';// import sniper style
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 const Home = () => {
-  const [categories,setCategories] = useState(cateogrie)
-  const [mostBooked,setMostBooked] = useState(MostBooked)
+  const [categories,setCategories] = useState([])
+  const [mostBooked,setMostBooked] = useState([])
   useEffect(async() => {
     await axios.get(`https://staging.chikku4u.com/chikku/api/category/getAllCategories`)
       .then(response => {
@@ -35,7 +38,6 @@ const Home = () => {
   }, []);
 
 
-  console.log(mostBooked)
   
   return (
     <div className="home Container">
@@ -76,7 +78,7 @@ repair services in Karnataka.</p>
             <div className='categorieContainer'>
                 <p className='categorieText'>Select a Category</p>
                 <div className='categorieImageContainer'>
-                  {categories.map((ele,i)=>{
+                  {categories?.map((ele,i)=>{
                     return (
                       <div className='grid-containeritem'>
                         <div className='imgContainer'>
@@ -109,12 +111,30 @@ repair services in Karnataka.</p>
               </div>
             </div>
             <div className='Container bookNowContainer'>
+              <h1 className='popularCategorie'>Popular Categories</h1>
               <div className='bookNow'>
 
               <img src={Book1} alt='book1' />
-              </div>
-              <div className='bookNow'>
               <img src={Book2}  alt='book1' />
+              </div>
+              
+              </div>
+              <div className='Container BannerContainer'>
+                <div className='bannerImageConatiner'>
+                  <img src={bannerImage} alt='bannerImg'/>
+                  
+
+                  <p className='bannerText01'>Experience the APP!</p>
+                  <p className='bannerText02'>One App For repair your Desktop, Laptop, Printer, Biometric & Network</p>
+                  
+
+                 <p className='bannerText03'>Download Our App From</p>
+                 
+                 <ul className="bannerGoogleImage">
+           <img src={GooglePlay} style={{height:"41px", width:"136px", objectFit:"cover"}}/>
+           <img src={AppStore}style={{height:"41px", width:"136px", objectFit:"cover"}} />
+          </ul>
+                
                 </div>
               </div>
     

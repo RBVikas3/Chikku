@@ -11,9 +11,13 @@
   color: white;
   
 }
+
 .firstGrid{
   margin-right: 12px;
 
+}
+.firstGrid:hover{
+  cursor: pointer;
 }
 .firstGridText{
   font-size: 18px;
@@ -22,6 +26,9 @@
 .secondGrid{
   display: flex;
   flex-direction: column;
+}
+.secondGrid:hover{
+  cursor: pointer;
 }
 .secondGridTitle{
   font-size: 24px;

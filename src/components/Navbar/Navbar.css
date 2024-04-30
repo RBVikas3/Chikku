@@ -1,20 +1,26 @@
-.navbarConatiner{
+.navbarConatiner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 3rem;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  padding: 1rem 3rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  background-color: white;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
   /* position: fixed;
   top: 0px; */
 }
-.inputContainer{
+
+.inputContainer {
   position: relative;
   border: 1px solid #E3E3E3;
   padding: 12px 16px;
   border-radius: 6px;
-  
+
 }
-.locationIcon{
+
+.locationIcon {
   position: absolute;
   top: 13px;
   left: -1px;
@@ -22,27 +28,32 @@
   color: #A2A3A3;
   padding: 0px 9px;
 }
-.arrowDown{
+
+.arrowDown {
   position: absolute;
   top: 14px;
   right: 16px;
   font-size: 21px;
 }
-.inputContainers{
+
+.inputContainers {
   display: flex;
   gap: 12px;
 }
-.inputBox{
+
+.inputBox {
   width: 7rem;
-     border: none;
-     padding: 2px 15px;
+  border: none;
+  padding: 2px 15px;
 }
+
 .inputBox::placeholder {
   color: #707070;
   font-size: 18px;
   text-indent: 5px;
 }
-.SearchContainer{
+
+.SearchContainer {
   position: relative;
   /* width: 100px; */
   border: 1px solid #E3E3E3;
@@ -51,45 +62,298 @@
 
 
 }
-.searchIcon{
+
+.searchIcon {
   position: absolute;
   font-size: 21px;
   top: 12px;
   padding: 0px 5px;
   color: #A2A3A3;
 }
-.searchInput{
-  padding: 3px 30px ;
+
+.searchInput {
+  padding: 3px 30px;
   border: none;
   outline: none;
   width: 250px;
 }
-.searchInput::placeholder{
+
+.searchInput::placeholder {
   font-size: 18px;
   color: #707070;
 }
-.signinContainer{
+
+.signinContainer {
   display: flex;
   gap: 12px;
 }
-.loginBtn{
-  background-color: #E3E3E3;
-  padding: 12px 25px;
-  border-radius: 30px;
-  border: 1px solid #E3E3E3;
-  outline: none;
-  font-size: 14px;
-  color: #4E4E4E;
-  min-width: 90px;
-}
-.signinBtn{
-  background-color: #E3E3E3;
-  padding: 12px 25px;
-  min-width: 90px;
-  border-radius: 30px;
-  border: 1px solid #E3E3E3;
-  outline: none;
-  font-size: 14px;
-  color: #4E4E4E;
 
+.loginBtn {
+  background-color: #E3E3E3;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: 1px solid #E3E3E3;
+  outline: none;
+  font-size: 14px;
+  color: #1c49b2;
+  min-width: 90px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signinBtn {
+  background-color: #E3E3E3;
+  padding: 12px 25px;
+  min-width: 90px;
+  border-radius: 30px;
+  border: 1px solid #E3E3E3;
+  outline: none;
+  font-size: 14px;
+  color: #1c49b2;
+  font-weight: 600;
+  cursor: pointer;
+
+}
+
+.signinBtn:hover {
+  background-color: #1c49b2;
+  color: white;
+}
+
+.loginBtn:hover {
+  background-color: #1c49b2;
+  color: white;
+}
+
+.modelLoginText {
+  font-size: 21px;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.modelLoginotp {
+  font-size: 1rem;
+  font-family: 600;
+}
+
+.modelOtpBox {
+  outline: none;
+  border: none;
+  padding: 0.7rem;
+
+}
+
+.inputDivider {
+  width: 0.5px;
+  /* Width of the line */
+  height: 30px;
+  /* Height of the line */
+  background-color: #000;
+  /* Color of the line */
+  margin: 0 10px;
+  /* Adjust margin as needed */
+}
+
+.modelInputContainer {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 21px;
+  border: 1px solid #D1CFCF;
+  border-radius: 12px;
+  padding: 0.3rem;
+}
+
+.loginTermContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.agreementText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.termAndCondition {
+  color: #0d6efd;
+  border-bottom: 2px solid #0d6efd;
+  ;
+}
+
+.inputCheckBox {
+  font-size: 12px;
+}
+
+.GetVerificationCode {
+  margin-top: 27px;
+  /* background-color: #0d6efd; */
+  color: white;
+  padding: 1rem 7.9rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.mobileConfirmedCtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 21px;
+  gap: 1rem;
+
+}
+
+.mobileModelContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 21px;
+
+}
+
+/* .GetVerificationCode:hover{
+  background-color: white;
+  color: #0d6efd;
+  cursor: pointer;
+} */
+.closeMdCtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.IosClose:hover {
+  height: 1.6rem;
+  width: 1.6rem;
+  background-color: #0d6efd;
+  transition: 'opacity 0.3s ease-in-out';
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.confirm {
+  background-color: #1c49b2;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+
+}
+
+.close {
+  background-color: red;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+
+}
+.separator{
+  margin: 0 5px; 
+  font-size: 16px; 
+}
+
+.otp-input {
+  width: 250px;
+  height: 30px;
+  font-size:30px;
+  text-align: center;
+  margin: 5px;
+   margin: auto;
+   margin-top: 12px;
+}
+.resendButton{
+
+  width: 401px;
+  margin-top: 12px;
+
+}
+.timerForOtp{
+  margin-top: 12px;
+  color: grey;
+  font-size: 21px;
+   margin-right: 21px;
+}
+.timer{
+  font-size: 21px;
+color:red;
+
+}
+.receiveCode{
+  margin-top: 12px;
+  margin-right: 12px;
+
+}
+.resendCode{
+    color: grey;
+  font-size: 21px;
+
+}
+.inputContainers{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+
+}
+.firstName{
+  padding: 14px 12px;
+  border-radius: 21px;
+  border: 1px solid #01A0FF80;
+  outline: none;
+  background-color: #E2F4FF;
+}
+.secondName{
+  padding: 14px 12px;
+  border-radius: 21px;
+  border: 1px solid #01A0FF80;
+  outline: none;
+  background-color: #E2F4FF;
+  width: 92%;
+  margin-bottom: 21px;
+}
+.firstName::placeholder{
+  color: #A6A6A6;
+
+}
+.selectpicker{
+  padding: 1rem;
+}
+#demo-simple-select{
+  width: 370px;
+  padding: 0.5rem;
+  background-color:#E2F4FF;
+  /* margin-bottom: 2rem; */
+}
+/* .register{
+  margin-top: 3rem;
+} */
+.otpNotCorrect{
+  color: red;
+  font-size: 21px;
 }
