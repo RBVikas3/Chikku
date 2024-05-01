@@ -27,7 +27,7 @@
     min-width: 100px;
 }
 .homeLeftsideText{
-    font-size: 18px;
+    font-size: 16px;
     font-family: 400;
     color: black;
 }
@@ -161,7 +161,7 @@
     width: 16.5rem;
     height: 16.5rem;
     
-    transition: transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .singleBook:hover .bookImage {
     transform: scale(1.1); /* Adjust the scale factor for the desired zoom level */
@@ -180,11 +180,14 @@
   .bookNow{
     display: flex;
     gap: 6rem;
+    width:100%
   }
   .bookNow> img{
-    width: 30rem;
-    height: 15rem;
+    width: 36rem;
+    height: 14rem;
+    object-fit: cover;
     cursor: pointer;
+    border-radius: 12px;
   }
   .popularCategorie{
     font-size: 34px;
@@ -194,7 +197,7 @@
   }
   .BannerContainer{
     position: relative;
-    width: 600px;
+    width: 637px;
     padding: 1rem 19rem;
     height: 15rem;
     background-color: #1993F8;
@@ -255,4 +258,158 @@
     display: flex;
     gap: 3rem;
   }
+ .subCategorieContainer{
+  border:3px soild grey;
+  overflow-y: auto;
+   height: 460px;
+   width: 100%;
+ }
+ .singleSubCategorie{
+  display: flex;
+  /* flex-direction: column; */
+  flex: 1;
+ }
+ .mainSubCategorie{
+  border: 2px solid #dee2e6;
+  padding: 10px;
+  border-radius: 12px;
+ }
+ .singleSubCategorieContainer{
+  background: #F6F6F6;
+  margin-bottom: 12px;
+  padding: .3rem 1rem;
+  border-radius: .5rem;
+  align-items: center;
+  height:min-content;
+ }
+ .rightSideSingleSubCategorie{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+ .subCategorieImage{
+  width: 10rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 15px;
+  
+ }
+ .categorieName{
+  font-size: 1.25rem;
+  font-family: 600;
+  color: #1c49b2;
+  padding: 10px 6px;
+ }
+ .subCategoryName{
+
+   font-size: 1.1rem;
+   letter-spacing: .8px;
+   font-weight: 600;
+   padding: .5rem 0;
+   transition: all .3s ease-in-out;
+   color: #1c49b2;
+ }
+ .subcategoryDesciption{
+
+   color: #535353;
+   font-size: .875rem;
+   line-height: 1.5;
+   width: 96%;
+   /* text-align: justify; */
+ }
+ .viewServices{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    color: rgba(13, 110, 253);
+    font-weight: 900;
+    cursor: pointer;
+    font-size: 0.86rem;
+    margin-top: 6px;
+ }
+ .subCategoriesServicesImg{
+  width:6rem;
+  height: 6rem;
+  object-fit:cover;
+  border-radius: 12px;
+  display: flex;
+  justify-content: flex-start;
+ }
+ .singleSubCategorieServices{
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+ }
+ .leftSideSingleSubCategorieServices{
+  display: flex;
+  flex-direction: column;
+  gap:6px;
+  /* flex:3; */
+  width: 81%;
+  margin-right: 12px;
+
+ }
+ .rightSideSingleSubCategorieServices{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+ }
+ .subCategorieSeviceName{
+
+   font-size: .9rem;
+   letter-spacing: .8px;
+   font-weight: 900;
+   padding: .5rem 0;
+   
+ }
+ .subCategorieDescription{
+  color: #535353;
+  font-size: .875rem;
+ }
+ .subPrice{
+  margin-top: 2rem;
+  font-weight: 900;
+ }
+ .selectService{
+  margin: 12px 0px;
+  color: #495057;
+  font-weight: 600;
+ }
+ .modelDesktop{
+   color:#1c49b2 ;
+   font-size: 21px;
+   font-weight: 700
+
+ }
+ .Add{
+  width: 5rem;
+  font-size: .86rem;
+  font-weight: 600;
+  background: #F0F0F0;
+  color: #1c49b2;
+
+  transition: all .3s ease-in-out;
+  padding: 12px 6px;
+  border-radius: 21px;
+  border: none;
+  outline: none;
+  margin-left: 6px;
+
+ }
+ .Add:hover{
+  background-color: #1c49b2;
+  color: #F0F0F0;;
+ }
  
+.modal-footer{
+ position: sticky;
+ bottom: -25px;
+ /* width: 400px; */
+ margin-left: 3px;
+ display: flex;
+ justify-content: end;
+ border-top: 1px solid white;
+ /* background-color: red; */
+ 
+}
